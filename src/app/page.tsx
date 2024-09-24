@@ -4,11 +4,6 @@ import { db } from "@/db";
 import { person } from "@/db/schema";
 
 // Define the shape of a person object
-interface Person {
-  id: number;
-  name: string;
-  email: string;
-}
 
 async function getPeople(): Promise<any> {
   return db.select().from(person);
