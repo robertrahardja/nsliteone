@@ -4,7 +4,7 @@ import { person } from "@/db/schema";
 import { desc } from "drizzle-orm";
 
 export default async function Home() {
-
+  'use server'
   // const data = await db.insert(person).values({ id: 2, userName: "John", userCountry: "USA" });
 
   const data = await db

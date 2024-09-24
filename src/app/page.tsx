@@ -6,6 +6,7 @@ import { person } from "@/db/schema";
 // Define the shape of a person object
 
 async function getPeople(): Promise<any> {
+  'use server'
   return db.select().from(person);
 }
 
