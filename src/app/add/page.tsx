@@ -16,7 +16,7 @@ export default async function Home() {
   const lastId = data[0]?.id;
   console.log(data);
   console.log(lastId);
-  let newid = lastId! + 1;
+  const newid = lastId! + 1;
   const newdata = await db.insert(person).values({ id: newid, userName: "John", userCountry: "USA" });
   console.log(newdata);
   return (
